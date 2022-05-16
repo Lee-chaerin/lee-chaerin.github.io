@@ -1,0 +1,212 @@
+@font-face {
+  font-family: 'IBMPlexSansKR-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'IBMPlexSansKR-Regular';
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+/* nav */
+nav{width: 100%; height: 85px; background-color: #004614; display: flex; align-items: center; justify-content: space-around;}
+#nav{position: fixed;}
+
+#logo{margin-left: 50px; font-size: 30px; display: flex; align-items: center; letter-spacing: 3px;}
+#logo > div > div{margin-top: -9px; font-size: 16px; letter-spacing: 0;}
+#logo img{width: 50px; margin-right: 5px;}
+
+nav div ul{list-style: none; margin: 0; padding: 0; font-size: 20px;}
+#menu > li{width: 130px; padding: 27px 10px; background-color: #004614; display: inline-block; text-align: center; position: relative;}
+#menu > li ul{display: none; position: absolute; top: 84px; left: 0;}
+#menu > li:hover ul{display: block;}
+#menu > li ul li{width: 130px; padding: 8px 10px; background-color: #aaaaaa;}
+#menu > li ul li:hover{background-color: #03942c;}
+
+
+/* home body */
+#top{background-image: url("/file/2019MTbg.jpg"); background-size: 100% 100%; height: 650px; width: 70%; margin: auto; padding-top: 85px;}
+#date{background: rgb(0 0 0 / 80%); color: #ffffff; width: 25%; height: 100%; float: right;}
+
+#date table{width: 80%; margin: 50px auto; text-align: center; font-size: 15px;}
+#date table caption{font-size: 23px; margin-bottom: 25px;}
+#date table th{border-bottom: 1px solid #ffffff; padding-bottom: 8px;}
+#date table td{padding-top: 10px;}
+
+.holiday{color: #ff0000; font-weight: 600;}
+.check{color: #2ec724; font-weight: 600;}
+
+#date div{width: 80%; font-size: 23px; margin: 60px auto 0;}
+
+
+#icon{width: 100%; height: 235px; background-color: #ededed;}
+#icon > div{width: 1350px; height: 100%; margin: auto; display: flex; justify-content: space-around; align-items: center;}
+#icon a{color: #004614; font-size: 30px; font-weight: 600; display: grid; justify-items: center;}
+#icon img{width: 130px; margin: 5px 0;}
+
+
+#contest{
+  width: 70%;
+  height: 400px;
+  margin: auto;
+  background-color: bisque;
+}
+
+#gallery{
+  width: 70%;
+  height: 375px;
+  margin: auto;
+  background-color: aquamarine;
+}
+
+
+
+/* body */
+#title{width: 100%; height: 175px; border-bottom: 5px solid #004614; background-image: url("/file/bg.jpg");}
+#title section{height: 100%; background: rgb(0 0 0 / 60%); display: flex; align-items: center; justify-content: center;}
+#title h1{font-size: 50px; font-weight: 900; letter-spacing: 8px; color: #ffffff;}
+
+
+
+#body {
+  width: 60%;
+  margin: 80px auto;
+}
+
+
+
+#left{
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+
+#left h1{font-size: 30px; color: #016938; margin-bottom: 25px;}
+#left ul{width: 75%; list-style: none; font-size: 20px; font-weight: 600;}
+#left li{border-bottom: 1px solid #c7c7c7; padding-bottom: 5px; margin-bottom: 8px;}
+
+#left a{color: #000000; padding-left: 8px;}
+#left a:hover{color: #016938;}
+
+
+
+#right{
+  width: 75%;
+  height: 100%;
+  float: right;
+}
+
+#right > h1{font-size: 30px; color: #016938; margin-bottom: 10px;}
+#right hr{border: 1px solid #c7c7c7; margin-bottom: 13px;}
+
+
+/* introduce */
+#introduce article{
+  margin-bottom: 45px;
+}
+
+#introduce iframe{
+  width: 100%;
+  height: 481.7px;
+}
+
+#introduce h2{
+  color: #016938;
+  padding-bottom: 5px;
+}
+
+#introduce ul{
+  list-style-type: "‧ ";
+  list-style-position: inside;
+}
+
+#introduce li strong{
+  color: #444444;
+}
+
+#introduce li > div{
+  padding-left: 11px;
+}
+
+
+
+
+
+/* professor */
+#professor article{display: flex; padding-bottom: 13px; margin-bottom: 13px; border-bottom: 1px solid #c7c7c7;}
+
+#professor img{width: 170px;}
+#professor h2{font-size: 23px; color: #444444; text-align: center;}
+#professor h2 > span{font-size: 25px; color: #000000;}
+
+#profInformation{margin-left: 20px;}
+#profInformation h6{font-size: 17px;}
+#profInformation h6 > span{color: #009b64;}
+
+
+
+/* member */
+#member h1{
+  text-align: center;
+  font-size: 27px;
+  margin-bottom: 45px;
+}
+
+#member table{
+  text-align: center;
+  border: 1px solid #444444;
+  border-collapse: collapse;
+}
+
+#member table caption{
+  font-size: 23px;
+  font-weight: 600;
+  color: #016938;
+  margin-bottom: 8px;
+}
+
+#member th{
+  width: 125px;
+  border: 1px solid #444444;
+  padding: 10px;
+}
+
+#member td{
+  width: 175px;
+  border: 1px solid #444444;
+  padding: 10px;
+}
+
+#member > table {
+  margin: 0 auto 63px;
+}
+
+#member > div > table{
+  margin: 0 42.5px;
+}
+
+
+
+
+
+
+/* footer */
+footer{height: 110px; border-top: 2px solid #004614;}
+footer > div{width: 60%; height: 100%; margin: auto; display: flex; align-items: center; justify-content: space-between;}
+
+footer > div > div{font-size: 22px; color: #009b64;}
+footer > div > div span{color: #000000; margin-right: 20px;}
+
+footer > div > a{float: right; color: #016938; font-size: 28px; font-weight: 900; display: flex; align-items: center; letter-spacing: 5px;}
+footer > div > a > div > div{color: #000000; font-size: 12px; letter-spacing: 0; margin-top: -5px;} 
+footer > div > a img{width: 60px; margin-right: 10px;}
+

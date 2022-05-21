@@ -41,34 +41,54 @@
 
   <div id="title">
     <section>
-      <h1>STUDY</h1>
+      <h1>INTRODUCE</h1>
     </section>
   </div>
   
 
-  <div id="body" style="height: 1000px;">
+  <div id="body" style="height: 750px;">
 
     <section id="left">
-      <h1>STUDY</h1>
+      <h1>INTRODUCE</h1>
       <ul>
-        <li>‣<a href="/study/major.html">전공 스터디</a></li>
-        <li>‣<a href="/study/coding.html">코딩 스터디</a></li>
+        <li>‣<a href="/introduce/introduce.html">학과 소개</a></li>
+        <li>‣<a href="/introduce/professor.html">전공교수 소개</a></li>
+        <li>‣<a href="/introduce/member.html">임원 소개</a></li>
+        <li>‣<a href="/introduce/notice.html">학과 공지</a></li>
+        <li>‣<a href="/introduce/gallery.html">학과 갤러리</a></li>
       </ul> 
     </section>
-
-    
     <section id="right">
-      <h1>전공 스터디</h1>
-      <hr>    
-      <div id="major">
-        <iframe src="https://padlet.com/5543705/major_study" frameborder="0"></iframe>
+      <h1>학과 갤러리</h1>
+      <hr>
+      <div id="galleryPages">
+        <table>
+          <colgroup>
+            <col style="width: 18%;">
+            <col style="width: 82%;">
+          </colgroup>
+          <tr>
+            <th>제목</th>
+            <td>2019년도 MT총회</td>
+          </tr>
+          <tr>
+            <th>행사일</th>
+            <td>2019.03.14</td>
+          </tr>
+        </table>
+        <div style="height: 500px;">
+          <img src="/file/lift.png" alt="" onclick="left()">
+          <div>
+            <img id="galleryImg" src="/file/2019_MT총회/1.jpg" alt="">
+          </div>
+          
+          <img src="/file/right.png" alt="" onclick="right()">
+
+        </div>
+        <button><a href="/introduce/gallery.html">목록으로</a></button>
       </div>
     </section>
-
   </div>
-
-
-  
 
 
   <footer>
@@ -81,4 +101,33 @@
     </div>
   </footer>
 </body>
+
+<script>
+  const img = document.getElementById("galleryImg");
+  let click = 1;
+
+  function left(){
+    if(click == 1){
+      alert("끝입니다");
+    } else if(click <= 13){
+      click -=1;
+      changeImg();
+    }
+  }
+
+  function right(){
+    if(click <= 12){
+      click += 1;
+      changeImg();
+    } else if(click == 13){
+      alert("끝입니다");
+    }
+  }
+  
+  function changeImg(){
+    img.src = "/file/2019_MT총회/"+click+".jpg";
+  }
+
+</script>
+
 </html>

@@ -443,6 +443,15 @@ nav div ul{list-style: none; margin: 0; padding: 0; font-size: 20px;}
   color: #004614;
 }
 
+#noticePages > button:hover{
+  background-color: #004614;
+  color: #ffffff;
+}
+
+#noticePages > button:hover > a{
+  color: #ffffff;
+}
+
 
 
 
@@ -531,7 +540,6 @@ nav div ul{list-style: none; margin: 0; padding: 0; font-size: 20px;}
 
 #galleryPages > button {
   padding: 5px 15px;
-  
   background-color: #ffffff;
   border: 2px solid #004614;
   border-radius: 20px ;
@@ -545,6 +553,14 @@ nav div ul{list-style: none; margin: 0; padding: 0; font-size: 20px;}
   color: #004614;
 }
 
+#galleryPages > button:hover{
+  background-color: #004614;
+  color: #ffffff;
+}
+
+#galleryPages > button:hover > a{
+  color: #ffffff;
+}
 
 
 

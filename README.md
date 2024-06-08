@@ -1,1 +1,1 @@
-# Lee-chaerin.github.io
+# 학과 사이트
